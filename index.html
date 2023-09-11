@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+
+      body {
+        min-width: 100vw;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: hsl(212, 45%, 89%);
+      }
+
+      .container {
+        width: 360px;
+        height: 40%;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 1rem;
+        margin: 20px;
+      }
+
+      .card {
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+      }
+
+      .card__text {
+        font-size: 15px;
+        color: hsl(220, 15%, 55%);
+        font-weight: 400;
+        padding: 20px 0px 10px 0px;
+        font-family: "Outfit", sans-serif;
+      }
+
+      .card__header {
+        font-family: "Outfit", sans-serif;
+        color: hsl(218, 44%, 22%);
+        font-weight: 7000;
+      }
+
+      .card__img {
+        max-width: 100%;
+        border-radius: 1rem;
+      }
+
+      .text-container {
+        padding: 17px 10px;
+        text-align: center;
+      }
+
+      @media screen and (max-width: 400px) {
+        body {
+          zoom: 0.75;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <img src="./images/image-qr-code.png" class="card__img" />
+        <div class="text-container">
+          <h2 class="card__header">
+            Improve your front-end skills by building projects
+          </h2>
+          <p class="card__text">
+            Scan the QR code to visit Frontend Mentor and take your coding
+            skills to the next level
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
